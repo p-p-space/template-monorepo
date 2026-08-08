@@ -203,12 +203,18 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+catalogs:
+  default:
+    '@biomejs/biome':
+      specifier: 2.5.7
+      version: 2.5.7
+
 importers:
 
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: 2.5.7
+        specifier: 'catalog:'
         version: 2.5.7
       '@commitlint/cli':
         specifier: ^21.2.1
@@ -226,7 +232,11 @@ importers:
         specifier: ^2.10.8
         version: 2.10.8
 
-  packages/biome-config: {}
+  packages/biome-config:
+    devDependencies:
+      '@biomejs/biome':
+        specifier: 'catalog:'
+        version: 2.5.7
 
 packages:
 

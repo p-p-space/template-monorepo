@@ -16,5 +16,8 @@
   "files": ["*.json"],
   "scripts": {
     "build": "echo 'No build step required for @repo/biome-config'"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:"
   }
 }
