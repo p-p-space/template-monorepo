@@ -1,0 +1,20 @@
+{
+  "name": "@space/biome-config",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "exports": {
+    "./biome.base": "./biome.base.json",
+    "./biome.react": "./biome.react.json",
+    "./biome.next": "./biome.next.json",
+    "./biome.vite": "./biome.vite.json",
+    "./biome.nest": "./biome.nest.json"
+  },
+  "files": ["*.json"],
+  "scripts": {
+    "build": "echo 'No build step required for @repo/biome-config'"
+  }
+}

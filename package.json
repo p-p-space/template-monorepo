@@ -1,32 +1,35 @@
 {
-	"name": "template-monorepo",
-	"description": "",
-	"version": "1.0.0",
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"type": "module",
-	"scripts": {
-		"build": "turbo run build",
-		"dev": "turbo run dev",
-		"lint": "turbo run lint",
-		"typecheck": "turbo run typecheck",
-		"format": "biome format --write .",
-		"check": "biome check --write .",
-		"prepare": "husky"
-	},
-	"devEngines": {
-		"packageManager": {
-			"name": "pnpm",
-			"version": "11.20.0",
-			"onFail": "download"
-		}
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.5.7",
-		"@commitlint/cli": "^21.2.1",
-		"@commitlint/config-conventional": "^21.2.0",
-		"husky": "^9.1.7",
-		"turbo": "^2.10.8"
-	}
+  "name": "template-monorepo",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "lint": "turbo run lint",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "prod": "turbo run prod",
+    "check-types": "turbo run check-types",
+    "format": "biome format",
+    "format:write": "biome format --write .",
+    "fix": "biome check --write",
+    "prepare": "husky"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.20.0",
+      "onFail": "download"
+    }
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.7",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@space/biome-config": "workspace:*",
+    "husky": "^9.1.7",
+    "turbo": "^2.10.8"
+  }
 }

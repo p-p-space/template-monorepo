@@ -216,12 +216,17 @@ importers:
       '@commitlint/config-conventional':
         specifier: ^21.2.0
         version: 21.2.0
+      '@space/biome-config':
+        specifier: workspace:*
+        version: link:packages/biome-config
       husky:
         specifier: ^9.1.7
         version: 9.1.7
       turbo:
         specifier: ^2.10.8
         version: 2.10.8
+
+  packages/biome-config: {}
 
 packages:
 

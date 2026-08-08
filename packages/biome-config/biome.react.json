@@ -1,0 +1,41 @@
+{
+  "javascript": {
+    "globals": ["React", "JSX"]
+  },
+  "overrides": [
+    {
+      "includes": ["**/*.{ts,tsx}", "**/*.{test,spec}.{ts,tsx}"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noChildrenProp": "error",
+            "useExhaustiveDependencies": "warn",
+            "useHookAtTopLevel": "error",
+            "useJsxKeyInIterable": "error",
+            "noNestedComponentDefinitions": "error",
+            "noVoidElementsWithChildren": "error"
+          },
+          "nursery": {
+            "noReactStringRefs": "error"
+          },
+          "security": {
+            "noBlankTarget": "error",
+            "noDangerouslySetInnerHtml": "error",
+            "noDangerouslySetInnerHtmlWithChildren": "error",
+            "noScriptUrl": "error"
+          },
+          "style": {
+            "useComponentExportOnlyModules": "error"
+          },
+          "suspicious": {
+            "noArrayIndexKey": "error",
+            "noCommentText": "error",
+            "noDuplicateJsxProps": "error",
+            "noReactForwardRef": "error",
+            "noUnknownAttribute": "error"
+          }
+        }
+      }
+    }
+  ]
+}

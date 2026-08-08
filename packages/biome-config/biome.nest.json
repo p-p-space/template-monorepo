@@ -1,0 +1,20 @@
+{
+  "linter": {
+    "rules": {
+      "style": {
+        "useNamingConvention": "off",
+        "noParameterProperties": "off"
+      },
+      "complexity": {
+        "noUselessConstructor": "off"
+      },
+      "correctness": {
+        "noUnusedVariables": "warn",
+        "noUnusedPrivateClassMembers": "off"
+      }
+    }
+  },
+  "javascript": {
+    "globals": ["process", "Buffer", "console", "__dirname", "__filename"]
+  }
+}

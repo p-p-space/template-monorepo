@@ -1,0 +1,18 @@
+echo ""
+echo ">>> HUSKY PRE-COMMIT RUNNING <<<"
+echo "Running pre-commit checks with biome."
+echo ""
+
+# an alternative: "if ! pnpm commitlint ${1}; then"
+if ! NO_COLOR=1 FORCE_COLOR=0 pnpm biome check --staged; then
+	echo ""
+	echo ">>> HUSKY PRE-COMMIT FAILED <<<"
+  echo "No files were auto-modified."
+	echo "Run these commands to inspect and fix issues:"
+	echo "  1) pnpm lint"
+	echo "  2) pnpm lint:write"
+	echo ""
+	exit 1
+fi
+
+echo ">>> HUSKY PRE-COMMIT: validations completed. <<<"
