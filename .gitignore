@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Builds & Outputs
+dist
+.next
+out
+build
+
+# Turborepo
+.turbo
+
+# Environment
+.env
+.env*.local
+!.env.example
+
+# System & IDE
+.DS_Store
+.vscode
+.idea
