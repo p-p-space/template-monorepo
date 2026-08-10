@@ -2,7 +2,16 @@
   "$schema": "https://turborepo.dev/schema.json",
   "tasks": {
     "lint": {
-      "dependsOn": ["^lint"]
+      "dependsOn": ["^lint"],
+      "outputs": []
+    },
+    "format": {
+      "dependsOn": ["^format"],
+      "outputs": []
+    },
+    "check-types": {
+      "dependsOn": ["^check-types"],
+      "outputs": []
     },
     "dev": {
       "cache": false,
@@ -10,16 +19,12 @@
     },
     "build": {
       "dependsOn": ["^build"],
-      // "inputs": ["$TURBO_DEFAULT$", ".env*", "next.config.*", "vite.config.*", "tsconfig.*"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**", "!.next/dev/**"]
     },
     "prod": {
       "dependsOn": ["build"],
       "cache": false,
       "persistent": true
-    },
-    "check-types": {
-      "dependsOn": ["^check-types"]
     },
     "test": {
       "dependsOn": ["^test"],

@@ -15,9 +15,14 @@
   },
   "files": ["*.json"],
   "scripts": {
-    "build": "echo 'No build step required for @repo/biome-config'"
+    "lint": "biome check .",
+    "format": "biome format .",
+    "clean": "rm -rf .turbo"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:"
+  },
+  "peerDependencies": {
+    "@biomejs/biome": "^2.5.7"
   }
 }

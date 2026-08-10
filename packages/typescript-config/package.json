@@ -1,0 +1,31 @@
+{
+  "name": "@space/typescript-config",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "exports": {
+    "./tsconfig.base": "./tsconfig.base.json",
+    "./tsconfig.react": "./tsconfig.react.json",
+    "./tsconfig.next": "./tsconfig.next.json",
+    "./tsconfig.nest": "./tsconfig.nest.json",
+    "./tsconfig.vite.app": "./tsconfig.vite.app.json",
+    "./tsconfig.vite.node": "./tsconfig.vite.node.json"
+  },
+  "files": ["*.json"],
+
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format .",
+    "clean": "rm -rf .turbo"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "extends": "@space/typescript-config/tsconfig.base",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.space.tsbuildinfo"
+  },
+  "include": ["global.d.ts", "apps/**/*", "packages/**/*"],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    ".next",
+    ".turbo",
+    "**/*.config.*",
+    "**/commitlint.config.*",
+    "**/biome*.json",
+    "**/turbo.json",
+    "**/pnpm-workspace.yaml"
+  ]
+}
