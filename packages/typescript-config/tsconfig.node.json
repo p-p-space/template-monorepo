@@ -1,15 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.node.json",
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "isolatedModules": false,
+    "lib": ["esnext"],
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
     "noEmit": false,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "types": ["node"],
-    "verbatimModuleSyntax": false
+    "verbatimModuleSyntax": false,
+    "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
