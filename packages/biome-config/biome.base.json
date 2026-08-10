@@ -229,9 +229,9 @@
             "groups": [
               [":URL:", ":NODE:", ":BUN:", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
-              [":PACKAGE:", ":PACKAGE_WITH_PROTOCOL:", "!@repo/**", "!**/*.css", "!**/*.scss"],
+              [":PACKAGE:", ":PACKAGE_WITH_PROTOCOL:", "!@space/**", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
-              ["@repo/**", "!**/*.css", "!**/*.scss"],
+              ["@space/**", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
               [":ALIAS:", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
