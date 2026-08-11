@@ -1,0 +1,22 @@
+{
+  "name": "@space/tailwind-config",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./styles.css": "./styles.css"
+  },
+  "files": ["styles.css"],
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format ."
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@space/biome-config": "workspace:*"
+  },
+  "peerDependencies": {
+    "tailwindcss": "catalog:",
+    "@tailwindcss/postcss": "catalog:"
+  }
+}

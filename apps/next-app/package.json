@@ -11,6 +11,7 @@
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
+    "@space/tailwind-config": "workspace:*",
     "next": "catalog:",
     "react": "catalog:",
     "react-dom": "catalog:"
@@ -19,12 +20,12 @@
     "@biomejs/biome": "catalog:",
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
-    "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
     "@types/react-dom": "catalog:",
     "@types/react": "catalog:",
     "babel-plugin-react-compiler": "catalog:",
-    "tailwindcss": "^4.3.3",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
   "packageManager": "pnpm@11.21.0"
