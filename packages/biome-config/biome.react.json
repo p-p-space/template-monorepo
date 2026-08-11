@@ -1,4 +1,5 @@
 {
+  "extends": ["@space/biome-config/biome.base"],
   "javascript": {
     "globals": ["React", "JSX"]
   },

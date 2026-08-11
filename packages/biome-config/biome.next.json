@@ -1,4 +1,5 @@
 {
+  "extends": ["@space/biome-config/biome.base", "@space/biome-config/biome.react"],
   "linter": {
     "rules": {
       "correctness": {
