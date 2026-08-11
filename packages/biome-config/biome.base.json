@@ -21,6 +21,28 @@
     "expand": "auto",
     "useEditorconfig": true
   },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "all",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "quoteStyle": "single"
+    },
+    "globals": []
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": false,
+      "selfCloseVoidElements": "always"
+    }
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -136,31 +158,6 @@
       }
     }
   },
-  "javascript": {
-    "formatter": {
-      "jsxQuoteStyle": "double",
-      "quoteProperties": "asNeeded",
-      "trailingCommas": "all",
-      "semicolons": "always",
-      "arrowParentheses": "always",
-      "bracketSameLine": false,
-      "quoteStyle": "single",
-      "attributePosition": "auto",
-      "bracketSpacing": true
-    },
-    "globals": []
-  },
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    }
-  },
-  "html": {
-    "formatter": {
-      "indentScriptAndStyle": false,
-      "selfCloseVoidElements": "always"
-    }
-  },
   "overrides": [
     {
       "includes": ["**/*.{js,mjs,cjs,ts,tsx,mts,cts}", "**/*.{test,spec}.{ts,tsx}"],
@@ -169,7 +166,9 @@
           "suspicious": {
             "noConsole": {
               "level": "error",
-              "options": { "allow": ["warn", "error"] }
+              "options": {
+                "allow": ["warn", "error"]
+              }
             }
           }
         }

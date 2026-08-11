@@ -18,5 +18,4 @@ build
 
 # System & IDE
 .DS_Store
-.vscode
 .idea

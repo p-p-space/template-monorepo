@@ -1,5 +1,5 @@
 {
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.ignoreTrimWhitespace": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": { "source.organizeImports.biome": "explicit", "source.fixAll.biome": "explicit" },
@@ -10,7 +10,7 @@
   "editor.formatOnType": false,
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": "active",
-  "editor.largeFileOptimizations": false,
+  "editor.largeFileOptimizations": true,
   "editor.minimap.autohide": "mouseover",
   "editor.renderWhitespace": "all",
   "eslint.enable": false,
