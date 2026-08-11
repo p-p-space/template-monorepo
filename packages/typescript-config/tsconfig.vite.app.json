@@ -2,10 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.react.json",
   "compilerOptions": {
-    "types": ["vite/client"],
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "noEmit": true,
-    "jsx": "react-jsx"
+    /* Vite app support */
+    "allowArbitraryExtensions": true,
+    "erasableSyntaxOnly": true,
+    "types": ["vite/client"]
   }
 }

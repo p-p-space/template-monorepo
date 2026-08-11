@@ -2,14 +2,9 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
+    /* Decorators and metadata */
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "isolatedModules": false,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "noEmit": false,
-    "sourceMap": true,
-    "types": ["node"],
-    "verbatimModuleSyntax": false
+    "isolatedModules": false
   }
 }

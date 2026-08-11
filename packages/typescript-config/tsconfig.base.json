@@ -1,22 +1,29 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
+    /* Language and runtime */
+    "target": "es2024",
     "allowJs": true,
+    "moduleDetection": "force",
+    "esModuleInterop": true,
+
+    /* Module support */
+    "resolveJsonModule": true,
+
+    /* Emit and build */
     "declaration": true,
     "declarationMap": true,
-    "esModuleInterop": true,
     "incremental": true,
     "isolatedModules": true,
-    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    /* Strictness and correctness */
+    "strict": true,
+    "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "noUncheckedSideEffectImports": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "target": "es2024"
+    "noUnusedParameters": true
   }
 }

@@ -2,15 +2,17 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
+    /* JSX and DOM */
     "allowImportingTsExtensions": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "lib": ["esnext", "DOM", "DOM.Iterable"],
+
+    /* Bundler mode */
     "module": "ESNext",
     "moduleResolution": "bundler",
     "noEmit": true,
-    "resolveJsonModule": true,
     "useDefineForClassFields": true,
     "verbatimModuleSyntax": true
   }
