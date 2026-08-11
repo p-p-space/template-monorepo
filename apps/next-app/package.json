@@ -1,0 +1,31 @@
+{
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "prod": "next start",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "check-types": "tsc --noEmit"
+  },
+  "dependencies": {
+    "next": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@space/biome-config": "workspace:*",
+    "@space/typescript-config": "workspace:*",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "catalog:",
+    "@types/react-dom": "catalog:",
+    "@types/react": "catalog:",
+    "babel-plugin-react-compiler": "catalog:",
+    "tailwindcss": "^4.3.3",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@11.21.0"
+}
