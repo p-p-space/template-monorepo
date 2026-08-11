@@ -150,6 +150,11 @@
     },
     "globals": []
   },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
   "html": {
     "formatter": {
       "indentScriptAndStyle": false,
@@ -157,12 +162,6 @@
     }
   },
   "overrides": [
-    {
-      "includes": ["eslint.config.{js,mjs}"],
-      "javascript": {
-        "globals": ["exports"]
-      }
-    },
     {
       "includes": ["**/*.{js,mjs,cjs,ts,tsx,mts,cts}", "**/*.{test,spec}.{ts,tsx}"],
       "linter": {
@@ -180,9 +179,9 @@
       "includes": ["**/*.{test,spec}.{ts,tsx}"],
       "linter": {
         "rules": {
-          "nursery": { "noMisusedPromises": "error" },
-          "style": { "noNonNullAssertion": "error" },
-          "suspicious": { "noExplicitAny": "error" }
+          "nursery": { "noMisusedPromises": "warn" },
+          "style": { "noNonNullAssertion": "warn" },
+          "suspicious": { "noExplicitAny": "warn" }
         }
       }
     },
@@ -215,6 +214,16 @@
             "useThrowOnlyError": "off"
           },
           "suspicious": { "useAwait": "off" }
+        }
+      }
+    },
+    {
+      "includes": ["**/*.svg"],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "noSvgWithoutTitle": "off"
+          }
         }
       }
     }

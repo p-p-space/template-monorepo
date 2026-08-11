@@ -1,5 +1,4 @@
 {
-  "extends": ["@space/biome-config/biome.base"],
   "overrides": [
     {
       "includes": ["vite.config.ts"],
