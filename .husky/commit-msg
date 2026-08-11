@@ -1,8 +1,7 @@
 echo ""
-echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 echo ">>> HUSKY COMMIT-MSG RUNNING <<<"
 echo "Validating commit message with commitlint."
-echo ""
+echo ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 
 # an alternative: "if ! pnpm dlx commitlint; then"
 if ! NO_COLOR=1 FORCE_COLOR=0 pnpm commitlint --color=false --edit $1; then
@@ -15,5 +14,5 @@ if ! NO_COLOR=1 FORCE_COLOR=0 pnpm commitlint --color=false --edit $1; then
 	exit 1
 fi
 
-echo ">>> HUSKY COMMIT-MSG: validations completed. <<<"
 echo "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<"
+echo ">>> HUSKY COMMIT-MSG: validations completed. <<<"
