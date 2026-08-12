@@ -39,12 +39,12 @@ function App() {
           <ul>
             <li>
               <a href="https://vite.dev/" target="_blank" rel="noopener">
-                <img className="logo" src={viteLogo} alt="" /> Explore Vite
+                <img className="logo" src={viteLogo} alt="vite-logo" /> Explore Vite
               </a>
             </li>
             <li>
               <a href="https://react.dev/" target="_blank" rel="noopener">
-                <img className="button-icon" src={reactLogo} alt="" /> Learn more
+                <img className="button-icon" src={reactLogo} alt="react-logo" /> Learn more
               </a>
             </li>
           </ul>

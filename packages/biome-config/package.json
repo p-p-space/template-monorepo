@@ -24,6 +24,6 @@
     "@biomejs/biome": "catalog:"
   },
   "peerDependencies": {
-    "@biomejs/biome": "^2.5.7"
+    "@biomejs/biome": "catalog:"
   }
 }

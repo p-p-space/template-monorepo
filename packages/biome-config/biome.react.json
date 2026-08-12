@@ -1,6 +1,12 @@
 {
+  "root": false,
   "javascript": {
     "globals": ["React", "JSX"]
+  },
+  "linter": {
+    "domains": {
+      "react": "recommended"
+    }
   },
   "overrides": [
     {

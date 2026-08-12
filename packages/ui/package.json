@@ -14,7 +14,7 @@
   "scripts": {
     "lint": "biome check .",
     "format": "biome format .",
-    "check-types": "tsc -b",
+    "typecheck": "tsc -b",
     "clean": "rm -rf .turbo"
   },
   "dependencies": {

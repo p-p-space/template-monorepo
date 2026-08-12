@@ -1,4 +1,5 @@
 {
+  "root": false,
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -6,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/package-lock.json", "!**/pnpm-lock.yaml", "!**/yarn.lock", "!**/shadcn-ui/src/**/*"]
+    "includes": ["**", "!**/package-lock.json", "!**/pnpm-lock.yaml", "!**/yarn.lock"]
   },
   "formatter": {
     "enabled": true,
@@ -46,7 +47,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": false,
+      "preset": "recommended",
       "complexity": {
         "noAdjacentSpacesInRegex": "error",
         "noArguments": "error",

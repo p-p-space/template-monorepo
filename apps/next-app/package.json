@@ -13,7 +13,7 @@
     "prod": "next start",
     "lint": "biome check .",
     "format": "biome format .",
-    "check-types": "tsc --noEmit"
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@space/tailwind-config": "workspace:*",

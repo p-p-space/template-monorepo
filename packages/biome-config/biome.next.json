@@ -1,5 +1,9 @@
 {
+  "root": false,
   "linter": {
+    "domains": {
+      "next": "recommended"
+    },
     "rules": {
       "correctness": {
         "noBeforeInteractiveScriptOutsideDocument": "error",

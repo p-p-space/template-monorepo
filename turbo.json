@@ -9,8 +9,8 @@
       "dependsOn": ["^format"],
       "outputs": []
     },
-    "check-types": {
-      "dependsOn": ["^check-types"],
+    "typecheck": {
+      "dependsOn": ["^typecheck"],
       "outputs": []
     },
     "dev": {
