@@ -9,10 +9,7 @@
   "license": "MIT",
   "exports": {
     "./globals.css": "./src/styles/globals.css",
-    "./components/*": "./src/components/*.tsx",
-    "./ui/*": "./src/components/ui/*.tsx",
-    "./lib/*": "./src/lib/*.ts",
-    "./hooks/*": "./src/hooks/*.ts"
+    ".": "./src/**/*.{ts,tsx}"
   },
   "scripts": {
     "lint": "biome check .",
