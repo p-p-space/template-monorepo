@@ -4,8 +4,9 @@
   "version": "1.0.0",
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "type": "module",
+  "private": true,
+  "license": "MIT",
   "exports": {
     "./biome.base": "./biome.base.json",
     "./biome.react": "./biome.react.json",

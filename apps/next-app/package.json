@@ -1,7 +1,12 @@
 {
   "name": "next-app",
+  "description": "",
   "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "type": "module",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

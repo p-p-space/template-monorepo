@@ -1,8 +1,12 @@
 {
   "name": "vite-app",
-  "private": true,
+  "description": "",
   "version": "1.0.0",
+  "keywords": [],
+  "author": "",
   "type": "module",
+  "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",

@@ -1,8 +1,12 @@
 {
   "name": "@space/tailwind-config",
+  "description": "",
   "version": "1.0.0",
-  "private": true,
+  "keywords": [],
+  "author": "",
   "type": "module",
+  "private": true,
+  "license": "MIT",
   "exports": {
     "./styles.css": "./styles.css"
   },
