@@ -17,9 +17,12 @@
   },
   "dependencies": {
     "@space/tailwind-config": "workspace:*",
+    "@space/ui": "workspace:*",
+    "clsx": "catalog:",
+    "lucide-react": "^1.31.0",
     "next": "catalog:",
-    "react": "catalog:",
-    "react-dom": "catalog:"
+    "react-dom": "catalog:",
+    "react": "catalog:"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",

@@ -8,7 +8,8 @@
   "private": true,
   "license": "MIT",
   "exports": {
-    "./styles.css": "./styles.css"
+    "./styles.css": "./styles.css",
+    "./postcss.config": "./postcss.config.mjs"
   },
   "files": ["styles.css"],
   "scripts": {
