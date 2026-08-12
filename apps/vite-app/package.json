@@ -1,15 +1,15 @@
 {
   "name": "vite-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "prod": "vite preview",
     "lint": "biome check .",
-    "format": "biome format --write .",
-    "check-types": "tsc -b",
-    "preview": "vite preview"
+    "format": "biome format .",
+    "check-types": "tsc -b"
   },
   "dependencies": {
     "react": "catalog:",
