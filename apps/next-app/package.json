@@ -17,10 +17,9 @@
     "clean": "rm -rf .turbo"
   },
   "dependencies": {
-    "@space/tailwind-config": "workspace:*",
     "@space/ui": "workspace:*",
     "clsx": "catalog:",
-    "lucide-react": "^1.31.0",
+    "lucide-react": "catalog:",
     "next": "catalog:",
     "react-dom": "catalog:",
     "react": "catalog:"

@@ -1,7 +1,11 @@
 {
   "extends": "@space/typescript-config/tsconfig.vite.app",
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vite-app.tsbuildinfo"
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.vite-app.tsbuildinfo",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@space/ui/*": ["../../packages/ui/src/*"]
+    }
   },
   "include": ["src"]
 }
