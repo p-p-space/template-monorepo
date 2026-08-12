@@ -13,7 +13,8 @@
     "prod": "next start",
     "lint": "biome check .",
     "format": "biome format .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo"
   },
   "dependencies": {
     "@space/tailwind-config": "workspace:*",

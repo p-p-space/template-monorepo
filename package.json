@@ -16,6 +16,7 @@
     "lint:write": "turbo lint -- --write",
     "format": "turbo format",
     "format:write": "turbo format -- --write",
+    "clean": "turbo clean && rm -rf .turbo",
     "prepare": "husky"
   },
   "devEngines": {

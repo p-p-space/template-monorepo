@@ -14,7 +14,8 @@
   "files": ["styles.css"],
   "scripts": {
     "lint": "biome check .",
-    "format": "biome format ."
+    "format": "biome format .",
+    "clean": "rm -rf .turbo"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
