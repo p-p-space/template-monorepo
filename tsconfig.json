@@ -3,13 +3,13 @@
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.space.tsbuildinfo"
   },
-  "include": ["global.d.ts", "apps/**/*", "packages/**/*"],
+  "include": ["global.d.ts", "apps/**/*.ts", "apps/**/*.tsx", "packages/**/*.ts", "packages/**/*.tsx"],
   "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    ".next",
-    ".turbo",
+    "**/node_modules",
+    "**/dist",
+    "**/build",
+    "**/.next",
+    "**/.turbo",
     "**/*.config.*",
     "**/commitlint.config.*",
     "**/biome*.json",
