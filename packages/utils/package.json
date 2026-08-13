@@ -1,0 +1,31 @@
+{
+  "name": "@space/utils",
+  "description": "",
+  "version": "1.0.0",
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "exports": {
+    ".": "./src/index.ts",
+    "./schemas/*": "./src/schemas/*.ts",
+    "./validators/*": "./src/validators/*.ts"
+  },
+  "scripts": {
+    "lint": "biome check .",
+    "format": "biome format .",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "catalog:",
+    "@space/biome-config": "workspace:*",
+    "@space/typescript-config": "workspace:*",
+    "typescript": "catalog:"
+  },
+  "packageManager": "pnpm@11.21.0"
+}
