@@ -17,8 +17,8 @@
   "scripts": {
     "lint": "biome check .",
     "format": "biome format .",
-    "typecheck": "tsc -b",
-    "clean": "rm -rf .turbo"
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo node_modules"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

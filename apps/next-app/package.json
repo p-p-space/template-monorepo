@@ -14,10 +14,11 @@
     "lint": "biome check .",
     "format": "biome format .",
     "typecheck": "tsc --noEmit",
-    "clean": "rm -rf .turbo"
+    "clean": "rm -rf .turbo .next node_modules"
   },
   "dependencies": {
     "@space/ui": "workspace:*",
+    "@space/utils": "workspace:*",
     "clsx": "catalog:",
     "lucide-react": "catalog:",
     "next": "catalog:",

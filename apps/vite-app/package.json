@@ -13,11 +13,12 @@
     "prod": "vite preview",
     "lint": "biome check .",
     "format": "biome format .",
-    "typecheck": "tsc -b",
-    "clean": "rm -rf .turbo"
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .turbo dist node_modules"
   },
   "dependencies": {
     "@space/ui": "workspace:*",
+    "@space/utils": "workspace:*",
     "clsx": "catalog:",
     "lucide-react": "catalog:",
     "react": "catalog:",

@@ -21,13 +21,13 @@
   "scripts": {
     "lint": "biome check .",
     "format": "biome format .",
-    "clean": "rm -rf .turbo"
+    "clean": "rm -rf .turbo node_modules"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
     "typescript": "catalog:"
   },
   "peerDependencies": {
-    "typescript": "^7.0.2"
+    "typescript": "catalog:"
   }
 }

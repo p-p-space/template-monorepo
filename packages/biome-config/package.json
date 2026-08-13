@@ -18,7 +18,7 @@
   "scripts": {
     "lint": "biome check .",
     "format": "biome format .",
-    "clean": "rm -rf .turbo"
+    "clean": "rm -rf .turbo node_modules"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:"
