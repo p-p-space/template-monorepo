@@ -3,8 +3,9 @@
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
     /* Vite tooling */
-    "allowImportingTsExtensions": true,
     "noEmit": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "erasableSyntaxOnly": true
   }
 }

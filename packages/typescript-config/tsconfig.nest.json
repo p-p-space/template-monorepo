@@ -3,8 +3,14 @@
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
     /* Decorators and metadata */
+    "incremental": true,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "isolatedModules": false
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "resolvePackageJsonExports": true,
+    "strictBindCallApply": false
   }
 }

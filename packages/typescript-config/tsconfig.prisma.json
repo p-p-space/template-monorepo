@@ -1,0 +1,12 @@
+// TODO: Review this config for the implementation in backend packages.
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "./tsconfig.node.json",
+  "compilerOptions": {
+    /* Prisma runtime */
+    "declaration": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": false
+  }
+}

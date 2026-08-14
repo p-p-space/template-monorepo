@@ -8,13 +8,8 @@
     "moduleResolution": "NodeNext",
     "types": ["node"],
 
-    /* Emit and execution */
-    "noEmit": false,
+    /* Build and runtime */
     "sourceMap": true,
-
-    /* Strictness and compatibility */
-    "strictBindCallApply": true,
-    "forceConsistentCasingInFileNames": true,
-    "verbatimModuleSyntax": false
+    "noEmit": false
   }
 }

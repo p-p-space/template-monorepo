@@ -4,7 +4,6 @@
   "compilerOptions": {
     /* JSX and DOM */
     "allowImportingTsExtensions": true,
-    "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
     "jsxImportSource": "react",
     "lib": ["esnext", "DOM", "DOM.Iterable"],
@@ -14,6 +13,7 @@
     "moduleResolution": "bundler",
     "noEmit": true,
     "useDefineForClassFields": true,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true
   }
 }

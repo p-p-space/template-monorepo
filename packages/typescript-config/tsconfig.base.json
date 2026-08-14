@@ -4,26 +4,29 @@
     /* Language and runtime */
     "target": "es2024",
     "allowJs": true,
-    "moduleDetection": "force",
-    "esModuleInterop": true,
-
-    /* Module support */
-    "resolveJsonModule": true,
-
-    /* Emit and build */
-    "declaration": true,
-    "declarationMap": true,
-    "incremental": true,
-    "isolatedModules": true,
     "skipLibCheck": true,
 
-    /* Strictness and correctness */
+    /* Modules & Resolution */
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    /* Strict Type-Checking */
     "strict": true,
     "strictNullChecks": true,
+    "exactOptionalPropertyTypes": true,
+    "useUnknownInCatchVariables": true,
+
+    /* Linter & Quality Checks */
+    "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
-    "noUncheckedSideEffectImports": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
+    "noUncheckedSideEffectImports": true
   }
 }

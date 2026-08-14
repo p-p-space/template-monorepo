@@ -4,7 +4,6 @@
   "compilerOptions": {
     /* Vite app support */
     "allowArbitraryExtensions": true,
-    "erasableSyntaxOnly": true,
     "types": ["vite/client"]
   }
 }
