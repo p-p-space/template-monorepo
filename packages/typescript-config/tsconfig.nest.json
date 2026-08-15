@@ -2,6 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": "./tsconfig.node.json",
   "compilerOptions": {
+    "types": ["node", "jest"],
     /* Decorators and metadata */
     "incremental": true,
     "declaration": true,

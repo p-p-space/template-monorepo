@@ -4,7 +4,8 @@
     "rules": {
       "style": {
         "useNamingConvention": "off",
-        "noParameterProperties": "off"
+        "noParameterProperties": "off",
+        "useImportType": "off"
       },
       "complexity": {
         "noUselessConstructor": "off"

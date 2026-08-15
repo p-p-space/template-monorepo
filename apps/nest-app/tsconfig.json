@@ -1,0 +1,7 @@
+{
+  "extends": "@space/typescript-config/tsconfig.nest",
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.nest-app.tsbuildinfo",
+    "outDir": "./dist"
+  }
+}

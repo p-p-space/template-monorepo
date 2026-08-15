@@ -235,6 +235,7 @@
         "organizeImports": {
           "level": "on",
           "options": {
+            "sortBareImports": true,
             "groups": [
               [":URL:", ":NODE:", ":BUN:", "!**/*.css", "!**/*.scss"],
               ":BLANK_LINE:",
