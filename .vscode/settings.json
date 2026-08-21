@@ -1,21 +1,8 @@
 {
-  "diffEditor.ignoreTrimWhitespace": true,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "editor.codeActionsOnSave": { "source.organizeImports.biome": "explicit", "source.fixAll.biome": "explicit" },
-  "editor.defaultFormatter": "biomejs.biome",
-  "editor.detectIndentation": false,
-  "editor.fontFamily": "Cascadia Code, Segoe UI Emoji, Noto Color Emoji",
-  "editor.formatOnSave": true,
-  "editor.formatOnType": false,
-  "editor.guides.bracketPairs": "active",
-  "editor.guides.bracketPairsHorizontal": "active",
-  "editor.largeFileOptimizations": true,
-  "editor.minimap.autohide": "mouseover",
-  "editor.renderWhitespace": "all",
-  "eslint.enable": false,
-  "files.encoding": "utf8",
-  "files.eol": "\n",
-  "prettier.enable": false,
-  "terminal.integrated.env.windows": { "LANG": "en_US.UTF-8", "LC_ALL": "en_US.UTF-8" }
+  "biome.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome"
 }
