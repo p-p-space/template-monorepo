@@ -7,6 +7,10 @@
   "type": "module",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
+  },
   "exports": {
     "./globals.css": "./src/styles/globals.css",
     "./components/*": "./src/components/*.tsx",
@@ -40,5 +44,5 @@
     "@types/react-dom": "catalog:",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.22.0"
 }

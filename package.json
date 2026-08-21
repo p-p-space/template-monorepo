@@ -7,24 +7,21 @@
   "type": "module",
   "private": true,
   "license": "MIT",
-  "scripts": {
-    "dev": "turbo dev",
-    "build": "turbo build",
-    "prod": "turbo prod",
-    "typecheck": "turbo typecheck",
-    "lint": "turbo lint",
-    "lint:write": "turbo lint -- --write",
-    "format": "turbo format",
-    "format:write": "turbo format -- --write",
-    "clean": "turbo clean && rm -rf .turbo node_modules",
-    "prepare": "husky"
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
   },
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "11.21.0",
-      "onFail": "download"
-    }
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "prod": "turbo run prod",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "lint:fix": "turbo run lint -- --write",
+    "format": "turbo run format",
+    "format:fix": "turbo run format -- --write",
+    "clean": "turbo run clean && rm -rf .turbo node_modules",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
@@ -33,7 +30,8 @@
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "husky": "^9.1.7",
-    "turbo": "^2.10.10",
+    "turbo": "^2.10.11",
     "typescript": "catalog:"
-  }
+  },
+  "packageManager": "pnpm@11.22.0"
 }

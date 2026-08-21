@@ -7,6 +7,10 @@
   "type": "module",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
+  },
   "exports": {
     ".": "./src/index.ts",
     "./schemas/*": "./src/schemas/*.ts",
@@ -27,5 +31,5 @@
     "@space/typescript-config": "workspace:*",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.22.0"
 }

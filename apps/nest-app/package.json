@@ -4,8 +4,13 @@
   "version": "1.0.0",
   "keywords": [],
   "author": "",
+  "type": "commonjs",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
+  },
   "scripts": {
     "dev": "nest start --watch",
     "build": "nest build",
@@ -25,9 +30,9 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^11.2.0",
-    "@nestjs/core": "^11.2.0",
-    "@nestjs/platform-express": "^11.2.0",
+    "@nestjs/common": "^11.2.1",
+    "@nestjs/core": "^11.2.1",
+    "@nestjs/platform-express": "^11.2.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2"
   },
@@ -35,12 +40,12 @@
     "@biomejs/biome": "catalog:",
     "@nestjs/cli": "^11.0.24",
     "@nestjs/schematics": "^11.1.0",
-    "@nestjs/testing": "^11.2.0",
+    "@nestjs/testing": "^11.2.1",
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "@types/express": "^5.0.6",
     "@types/jest": "^30.0.0",
-    "@types/node": "^26.2.0",
+    "@types/node": "catalog:",
     "@types/supertest": "^7.2.1",
     "globals": "^17.11.0",
     "jest": "^30.4.2",
@@ -63,5 +68,5 @@
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
   },
-  "packageManager": "pnpm@11.21.0"
+  "packageManager": "pnpm@11.22.0"
 }

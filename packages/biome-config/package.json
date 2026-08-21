@@ -7,6 +7,10 @@
   "type": "module",
   "private": true,
   "license": "MIT",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=11.0.0"
+  },
   "exports": {
     "./biome.base": "./biome.base.json",
     "./biome.react": "./biome.react.json",
@@ -25,5 +29,6 @@
   },
   "peerDependencies": {
     "@biomejs/biome": "catalog:"
-  }
+  },
+  "packageManager": "pnpm@11.22.0"
 }
