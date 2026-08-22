@@ -1,48 +1,30 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "root": false,
-  "javascript": {
-    "globals": ["React", "JSX"]
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+  "html": {
+    "formatter": {
+      "indentScriptAndStyle": false,
+      "selfCloseVoidElements": "always"
+    }
   },
   "linter": {
+    "enabled": true,
     "domains": {
       "react": "recommended"
-    }
-  },
-  "overrides": [
-    {
-      "includes": ["**/*.{ts,tsx}", "**/*.{test,spec}.{ts,tsx}"],
-      "linter": {
-        "rules": {
-          "correctness": {
-            "noChildrenProp": "error",
-            "useExhaustiveDependencies": "warn",
-            "useHookAtTopLevel": "error",
-            "useJsxKeyInIterable": "error",
-            "noNestedComponentDefinitions": "error",
-            "noVoidElementsWithChildren": "error"
-          },
-          "nursery": {
-            "noReactStringRefs": "error"
-          },
-          "security": {
-            "noBlankTarget": "error",
-            "noDangerouslySetInnerHtml": "error",
-            "noDangerouslySetInnerHtmlWithChildren": "error",
-            "noScriptUrl": "error"
-          },
-          "style": {
-            "useComponentExportOnlyModules": "error"
-          },
-          "suspicious": {
-            "noArrayIndexKey": "error",
-            "noCommentText": "error",
-            "noDuplicateJsxProps": "error",
-            "noReactForwardRef": "error",
-            "noUnknownAttribute": "error"
-          }
-        }
+    },
+    "rules": {
+      "preset": "recommended",
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
+      "a11y": {
+        "noSvgWithoutTitle": "off"
       }
     }
-  ]
+  }
 }

@@ -1,12 +1,4 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "root": false,
-  "overrides": [
-    {
-      "includes": ["vite.config.ts"],
-      "javascript": {
-        "globals": ["exports", "process"]
-      }
-    }
-  ]
+  "root": false
 }
