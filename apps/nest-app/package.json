@@ -24,8 +24,8 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "lint": "biome check .",
-    "format": "biome format .",
+    "lint": "biome check src test",
+    "format": "biome format src test",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf .turbo dist node_modules"
   },
