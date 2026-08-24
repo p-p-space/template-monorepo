@@ -69,10 +69,10 @@ Instala el paquete en tu app o paquete:
 ### Notas
 
 - Parte de `biome.base` para proyectos generales y paquetes compartidos.
-- `biome.react` añade reglas específicas de React sobre la base.
-- `biome.next` ya incluye las capas base y React, así que basta para apps Next.js.
-- Para apps React con Vite, combina `biome.react` y `biome.vite`.
-- Para apps NestJS, extiende `biome.nest`; ya incluye la base.
+- `biome.react` añade reglas específicas de React.
+- `biome.next` añade reglas específicas de Next.js.
+- Para apps React con Vite, combina `biome.react` y `biome.vite` en el `biome.json` de la app.
+- `biome.nest` añade reglas específicas del backend Nest.js.
 
 Ver ejemplos de código: [Code Examples](#code-examples)
 

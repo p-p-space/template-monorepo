@@ -30,8 +30,10 @@
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "husky": "^9.1.7",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
     "turbo": "^2.10.11",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@11.22.0"
+  "packageManager": "pnpm@11.23.0"
 }
