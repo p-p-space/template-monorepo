@@ -1,14 +1,10 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "root": false,
-  "files": { "includes": ["**", "!!**/dist"] },
   "linter": {
     "enabled": true,
     "rules": {
       "preset": "recommended",
-      "nursery": {
-        "noFloatingPromises": "error"
-      },
       "style": {
         "useImportType": "off"
       },

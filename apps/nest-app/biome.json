@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "root": false,
-  "extends": ["@space/biome-config/biome.base", "@space/biome-config/biome.nest"]
+  "extends": ["@space/biome-config/biome.base", "@space/biome-config/biome.nest"],
+  "files": {
+    "includes": ["./**", "!!**/dist"]
+  }
 }

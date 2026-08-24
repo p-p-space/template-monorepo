@@ -40,9 +40,13 @@
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "@types/node": "catalog:",
-    "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
+    "@types/react": "catalog:",
+    "tailwindcss": "catalog:",
     "typescript": "catalog:"
+  },
+  "peerDependencies": {
+    "tailwindcss": "catalog:"
   },
   "packageManager": "pnpm@11.23.0"
 }

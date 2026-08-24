@@ -1,29 +1,16 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "root": false,
-  "css": {
-    "parser": {
-      "tailwindDirectives": true
-    }
-  },
-  "html": {
-    "formatter": {
-      "indentScriptAndStyle": false,
-      "selfCloseVoidElements": "always"
-    }
-  },
   "linter": {
     "enabled": true,
     "domains": {
-      "react": "recommended"
+      "react": "recommended",
+      "tailwind": "recommended"
     },
     "rules": {
       "preset": "recommended",
       "correctness": {
-        "useExhaustiveDependencies": "warn"
-      },
-      "a11y": {
-        "noSvgWithoutTitle": "off"
+        "useExhaustiveDependencies": "error"
       }
     }
   }
