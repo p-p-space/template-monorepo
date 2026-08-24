@@ -1,4 +1,4 @@
-@import "@space/ui/globals.css";
+@import '@space/ui/globals.css';
 
 @theme inline {
   --font-sans: var(--font-geist-sans);
