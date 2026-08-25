@@ -9,7 +9,7 @@
     "lib": ["esnext", "DOM", "DOM.Iterable"],
 
     /* Bundler mode */
-    "module": "ESNext",
+    "module": "esnext",
     "moduleResolution": "bundler",
     "noEmit": true,
     "useDefineForClassFields": true,
