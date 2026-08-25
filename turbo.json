@@ -1,5 +1,6 @@
 {
-  "$schema": "https://turborepo.dev/schema.json",
+  "$schema": "./node_modules/turbo/schema.json",
+  "ui": "tui",
   "globalEnv": ["PORT"],
   "tasks": {
     "lint": {
@@ -20,6 +21,7 @@
     },
     "build": {
       "dependsOn": ["^build"],
+      "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**", "!.next/dev/**"]
     },
     "prod": {

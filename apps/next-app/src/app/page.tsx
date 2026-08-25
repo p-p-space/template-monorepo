@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Button } from '@space/ui/components/ui/button';
+import { Button } from '@space/ui/components/button';
 import { type UserInput, userSchema } from '@space/utils';
 
 export default function Home() {

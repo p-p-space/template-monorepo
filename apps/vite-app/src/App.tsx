@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Button } from '@space/ui/components/ui/button';
+import { Button } from '@space/ui/components/button';
 
 import heroImg from './assets/hero.png';
 import reactLogo from './assets/react.svg';
