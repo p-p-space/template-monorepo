@@ -8,7 +8,7 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "includes": ["**", "!**/package-lock.json", "!**/pnpm-lock.yaml", "!**/yarn.lock"]
+    "includes": ["**", "**/.husky", "!**/package-lock.json", "!**/pnpm-lock.yaml", "!**/yarn.lock"]
   },
   "formatter": {
     "enabled": true,

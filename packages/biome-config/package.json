@@ -15,7 +15,6 @@
     "./biome.base": "./biome.base.json",
     "./biome.react": "./biome.react.json",
     "./biome.next": "./biome.next.json",
-    "./biome.vite": "./biome.vite.json",
     "./biome.nest": "./biome.nest.json"
   },
   "files": ["*.json"],
