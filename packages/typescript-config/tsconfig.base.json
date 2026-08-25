@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     /* Language and runtime */
-    "target": "es2025",
+    "target": "es2024",
     "allowJs": true,
     "skipLibCheck": true,
 
