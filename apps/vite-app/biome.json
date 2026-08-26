@@ -3,6 +3,6 @@
   "root": false,
   "extends": ["@space/biome-config/biome.base", "@space/biome-config/biome.react"],
   "files": {
-    "includes": ["./**", "!!**/dist"]
+    "includes": ["!!**/dist"]
   }
 }
