@@ -1,24 +1,14 @@
 # Dependencies
 node_modules
 
-# Build Outputs
-dist/
-dist-ssr/
-build/
-
-# Turborepo & TypeScript
+# Turborepo
 .turbo
-*.tsbuildinfo
 
 # Environment & Secrets
 .env
 .env.*
 !.env.example
 !.env*.example
-
-# Logs & Testing
-*.log
-coverage/
 
 # OS
 .DS_Store

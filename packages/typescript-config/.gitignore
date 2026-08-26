@@ -1,12 +1,6 @@
 # Dependencies
 node_modules
 
-# Next.js & Build Outputs
-.next/
-out/
-build/
-dist/
-
 # Turborepo & TypeScript
 .turbo
 *.tsbuildinfo
@@ -17,10 +11,5 @@ dist/
 !.env.example
 !.env*.example
 
-# Logs & Testing
-*.log
-coverage/
-
-# OS & Vercel
+# OS
 .DS_Store
-.vercel

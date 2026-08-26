@@ -1,11 +1,9 @@
 # Dependencies
 node_modules
 
-# Next.js & Build Outputs
-.next/
-out/
-build/
+# Build Outputs
 dist/
+build/
 
 # Turborepo & TypeScript
 .turbo
@@ -21,6 +19,5 @@ dist/
 *.log
 coverage/
 
-# OS & Vercel
+# OS
 .DS_Store
-.vercel
