@@ -3,6 +3,6 @@
   "root": false,
   "extends": ["@space/biome-config/biome.base", "@space/biome-config/biome.react", "@space/biome-config/biome.next"],
   "files": {
-    "includes": ["./**", "!!.next"]
+    "includes": ["./**", "!!.next", "!next-env.d.ts"]
   }
 }
