@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",
+    "@fontsource-variable/geist": "^5.3.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "catalog:",
     "lucide-react": "catalog:",
@@ -39,8 +40,8 @@
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "@types/node": "catalog:",
-    "@types/react-dom": "catalog:",
     "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },

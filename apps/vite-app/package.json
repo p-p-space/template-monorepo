@@ -23,7 +23,6 @@
   "dependencies": {
     "@space/ui": "workspace:*",
     "@space/utils": "workspace:*",
-    "clsx": "catalog:",
     "lucide-react": "catalog:",
     "react-dom": "catalog:",
     "react": "catalog:"

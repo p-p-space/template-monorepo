@@ -24,11 +24,11 @@
   "dependencies": {
     "@space/ui": "workspace:*",
     "@space/utils": "workspace:*",
-    "clsx": "catalog:",
     "lucide-react": "catalog:",
     "next": "catalog:",
-    "react-dom": "catalog:",
-    "react": "catalog:"
+    "next-themes": "^0.4.6",
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
@@ -36,8 +36,8 @@
     "@space/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "catalog:",
     "@types/node": "catalog:",
-    "@types/react-dom": "catalog:",
     "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "babel-plugin-react-compiler": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
