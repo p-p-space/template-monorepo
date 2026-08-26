@@ -1,77 +1,123 @@
-# React + TypeScript + Vite
+<p align="center">
+  <a href="https://vite.dev/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.simpleicons.org/vite/646CFF" width="80" height="80" alt="Vite Logo" />
+  </a>
+</p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">Vite React Application (<code>vite-app</code>)</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+  <strong>Single Page Application (SPA) built with Vite 8, React 19, Tailwind CSS v4, and React Compiler.</strong>
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+<p align="center">
+  <a href="https://vite.dev/"><img src="https://img.shields.io/badge/Vite-v8.2-646CFF?style=flat&logo=vite&logoColor=white" alt="Vite" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-v19.2-61DAFB?style=flat&logo=react&logoColor=black" alt="React" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-v4.3-06B6D4?style=flat&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-v5.9-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <img src="https://img.shields.io/badge/workspace-apps%2Fvite--app-60A5FA?style=flat" alt="Workspace" />
+</p>
 
-## React Compiler
+<p align="center">
+  <a href="#english">English</a> • <a href="#español">Español</a>
+</p>
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## English
 
-## Expanding the ESLint configuration
+Go to Spanish version: [Español](#español)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Overview
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+`vite-app` provides a lightweight, client-side rendered SPA with ultra-fast Hot Module Replacement (HMR). It seamlessly integrates with shared components from `@space/ui` and validation utilities from `@space/utils`.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Key Features
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **Bundler**: Vite 8 with HMR
+- **Framework**: React 19 with React Compiler (`@rolldown/plugin-babel`)
+- **Styling**: Tailwind CSS v4 (`@tailwindcss/vite`)
+- **Integrations**: Consumes shared UI components (`@space/ui`) and utilities (`@space/utils`)
 
-```
+### Available Scripts
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Run from workspace root:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **Start dev server**:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+  ```bash
+  pnpm --filter vite-app dev
+  ```
 
-```
+- **Build for production**:
+
+  ```bash
+  pnpm --filter vite-app build
+  ```
+
+- **Preview production build**:
+
+  ```bash
+  pnpm --filter vite-app prod
+  ```
+
+- **Run typecheck**:
+
+  ```bash
+  pnpm --filter vite-app typecheck
+  ```
+
+- **Run lint**:
+  ```bash
+  pnpm --filter vite-app lint
+  ```
+
+---
+
+## Español
+
+Ir a la versión en inglés: [English](#english)
+
+### Descripción General
+
+`vite-app` ofrece una aplicación de página única (SPA) renderizada en el cliente con Hot Module Replacement (HMR) ultra rápido. Se integra sin problemas con componentes compartidos de `@space/ui` y utilidades de `@space/utils`.
+
+### Características Principales
+
+- **Empaquetador**: Vite 8 con HMR
+- **Framework**: React 19 con React Compiler (`@rolldown/plugin-babel`)
+- **Estilos**: Tailwind CSS v4 (`@tailwindcss/vite`)
+- **Integración**: Consume componentes de interfaz (`@space/ui`) y utilidades (`@space/utils`)
+
+### Scripts Disponibles
+
+Ejecutar desde la raíz del workspace:
+
+- **Iniciar servidor de desarrollo**:
+
+  ```bash
+  pnpm --filter vite-app dev
+  ```
+
+- **Compilar para producción**:
+
+  ```bash
+  pnpm --filter vite-app build
+  ```
+
+- **Previsualizar compilación de producción**:
+
+  ```bash
+  pnpm --filter vite-app prod
+  ```
+
+- **Verificación de tipos**:
+
+  ```bash
+  pnpm --filter vite-app typecheck
+  ```
+
+- **Verificación de linter**:
+  ```bash
+  pnpm --filter vite-app lint
+  ```

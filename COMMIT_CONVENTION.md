@@ -1,6 +1,27 @@
-# Commit Message Convention
+<p align="center">
+  <a href="https://www.conventionalcommits.org/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.simpleicons.org/conventionalcommits/FE5196" width="80" height="80" alt="Conventional Commits Logo" />
+  </a>
+</p>
 
-[EN](#english) | [ES](#español)
+<h1 align="center">Commit Message Convention</h1>
+
+<p align="center">
+  <strong>Policy and design guide for conventional commit messages enforced via Husky and commitlint.</strong>
+</p>
+
+<p align="center">
+  <a href="https://commitlint.js.org/"><img src="https://img.shields.io/badge/commitlint-v21.2-FE5196?style=flat&logo=conventionalcommits&logoColor=white" alt="commitlint" /></a>
+  <a href="https://typicode.github.io/husky/"><img src="https://img.shields.io/badge/Husky-v9.1-808080?style=flat" alt="Husky" /></a>
+  <a href="https://www.conventionalcommits.org/"><img src="https://img.shields.io/badge/Conventional_Commits-v1.0.0-FE5196?style=flat&logo=conventionalcommits&logoColor=white" alt="Conventional Commits" /></a>
+  <a href="#english"><img src="https://img.shields.io/badge/policy-enforced-blue?style=flat" alt="Policy" /></a>
+</p>
+
+<p align="center">
+  <a href="#english">English</a> • <a href="#español">Español</a>
+</p>
+
+---
 
 ## English
 

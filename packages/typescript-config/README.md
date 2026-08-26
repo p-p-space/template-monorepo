@@ -1,8 +1,26 @@
-# @space/typescript-config
+<p align="center">
+  <a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.simpleicons.org/typescript/3178C6" width="80" height="80" alt="TypeScript Logo" />
+  </a>
+</p>
 
-Shared TypeScript configs for the monorepo.
+<h1 align="center"><code>@space/typescript-config</code></h1>
 
-[EN](#english) | [ES](#español)
+<p align="center">
+  <strong>Shared TypeScript configurations and presets for the monorepo workspaces.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/package-%40space%2Ftypescript--config-60A5FA?style=flat" alt="Package Name" />
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-v5.9-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="#license"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
+</p>
+
+<p align="center">
+  <a href="#english">English</a> • <a href="#español">Español</a>
+</p>
+
+---
 
 ## English
 

@@ -1,98 +1,147 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+  <a href="https://nestjs.com/" target="_blank" rel="noopener noreferrer">
+    <img src="https://nestjs.com/img/logo-small.svg" width="80" height="80" alt="NestJS Logo" />
+  </a>
 </p>
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+<h1 align="center">NestJS Application (<code>nest-app</code>)</h1>
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+<p align="center">
+  <strong>Backend REST API service built with NestJS 11, Express platform, Jest, and TypeScript.</strong>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
+<p align="center">
+  <a href="https://nestjs.com/"><img src="https://img.shields.io/badge/NestJS-v11.2-E0234E?style=flat&logo=nestjs&logoColor=white" alt="NestJS" /></a>
+  <a href="https://expressjs.com/"><img src="https://img.shields.io/badge/Express-v5.0-000000?style=flat&logo=express&logoColor=white" alt="Express" /></a>
+  <a href="https://jestjs.io/"><img src="https://img.shields.io/badge/Jest-v30.4-C21325?style=flat&logo=jest&logoColor=white" alt="Jest" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-v5.9-3178C6?style=flat&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <img src="https://img.shields.io/badge/workspace-apps%2Fnest--app-60A5FA?style=flat" alt="Workspace" />
+</p>
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+<p align="center">
+  <a href="#english">English</a> • <a href="#español">Español</a>
+</p>
 
-## Project setup
+---
 
-```bash
-$ pnpm install
-```
+## English
 
-## Compile and run the project
+Go to Spanish version: [Español](#español)
 
-```bash
-# development
-$ pnpm run start
+### Overview
 
-# watch mode
-$ pnpm run start:dev
+`nest-app` serves as the backend service layer within the monorepo. It features modular architecture, dependency injection, and comprehensive testing setups with Jest.
 
-# production mode
-$ pnpm run start:prod
-```
+### Key Features
 
-## Run tests
+- **Framework**: NestJS 11 with Express
+- **Tooling**: Biome for linting/formatting, TypeScript with decorator metadata
+- **Testing**: Jest unit tests (`*.spec.ts`) and End-to-End tests (`test/*.e2e-spec.ts`)
+- **Shared Packages**: Can consume shared validation schemas and utilities from `@space/utils`
 
-```bash
-# unit tests
-$ pnpm run test
+### Available Scripts
 
-# e2e tests
-$ pnpm run test:e2e
+Run from workspace root:
 
-# test coverage
-$ pnpm run test:cov
-```
+- **Start in development mode (with watch)**:
 
-## Deployment
+  ```bash
+  pnpm --filter nest-app dev
+  ```
 
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+- **Build for production**:
 
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+  ```bash
+  pnpm --filter nest-app build
+  ```
 
-```bash
-$ pnpm install -g @nestjs/mau
-$ mau deploy
-```
+- **Start production server**:
 
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+  ```bash
+  pnpm --filter nest-app prod
+  ```
 
-## Resources
+- **Run unit tests**:
 
-Check out a few resources that may come in handy when working with NestJS:
+  ```bash
+  pnpm --filter nest-app test
+  ```
 
-- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
-- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
-- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
-- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
-- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
-- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
-- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
-- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+- **Run E2E tests**:
 
-## Support
+  ```bash
+  pnpm --filter nest-app test:e2e
+  ```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+- **Run typecheck**:
 
-## Stay in touch
+  ```bash
+  pnpm --filter nest-app typecheck
+  ```
 
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- **Run lint**:
+  ```bash
+  pnpm --filter nest-app lint
+  ```
 
-## License
+---
 
-Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+## Español
+
+Ir a la versión en inglés: [English](#english)
+
+### Descripción General
+
+`nest-app` sirve como la capa de servicios backend dentro del monorepo. Cuenta con arquitectura modular, inyección de dependencias y configuración completa para pruebas con Jest.
+
+### Características Principales
+
+- **Framework**: NestJS 11 con plataforma Express
+- **Herramientas**: Biome para linting y formateo, TypeScript con soporte de metadata para decoradores
+- **Pruebas**: Pruebas unitarias con Jest (`*.spec.ts`) y pruebas End-to-End (`test/*.e2e-spec.ts`)
+- **Paquetes Compartidos**: Capaz de consumir esquemas de validación y utilidades de `@space/utils`
+
+### Scripts Disponibles
+
+Ejecutar desde la raíz del workspace:
+
+- **Iniciar en modo desarrollo (con watch)**:
+
+  ```bash
+  pnpm --filter nest-app dev
+  ```
+
+- **Compilar para producción**:
+
+  ```bash
+  pnpm --filter nest-app build
+  ```
+
+- **Iniciar servidor de producción**:
+
+  ```bash
+  pnpm --filter nest-app prod
+  ```
+
+- **Ejecutar pruebas unitarias**:
+
+  ```bash
+  pnpm --filter nest-app test
+  ```
+
+- **Ejecutar pruebas E2E**:
+
+  ```bash
+  pnpm --filter nest-app test:e2e
+  ```
+
+- **Verificación de tipos**:
+
+  ```bash
+  pnpm --filter nest-app typecheck
+  ```
+
+- **Verificación de linter**:
+  ```bash
+  pnpm --filter nest-app lint
+  ```

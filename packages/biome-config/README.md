@@ -1,8 +1,26 @@
-# @space/biome-config
+<p align="center">
+  <a href="https://biomejs.dev/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.simpleicons.org/biome/60A5FA" width="80" height="80" alt="Biome Logo" />
+  </a>
+</p>
 
-Shared Biome configurations for the monorepo.
+<h1 align="center"><code>@space/biome-config</code></h1>
 
-[EN](#english) | [ES](#español)
+<p align="center">
+  <strong>Shared Biome linting and formatting configurations for the monorepo.</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/package-%40space%2Fbiome--config-60A5FA?style=flat" alt="Package Name" />
+  <a href="https://biomejs.dev/"><img src="https://img.shields.io/badge/Biome-v2.5-60A5FA?style=flat&logo=biome&logoColor=white" alt="Biome" /></a>
+  <a href="#license"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License" /></a>
+</p>
+
+<p align="center">
+  <a href="#english">English</a> • <a href="#español">Español</a>
+</p>
+
+---
 
 ## English
 
