@@ -13,7 +13,7 @@ function App() {
     <>
       <section className="flex grow flex-col items-center justify-center gap-6.25 px-5 py-8 text-center lg:px-0 lg:py-0">
         <div className="relative h-44.75 w-full">
-          <img src={heroImg} className="relative z-0 mx-auto h-44.75 w-42.5" width="170" height="179" alt="" />
+          <img src={heroImg} className="relative z-0 mx-auto h-44.75 w-42.5" width="170" height="179" alt="Hero logo" />
           <img
             src={reactLogo}
             className="absolute inset-x-0 top-8.5 z-10 mx-auto h-7 w-auto transform-[perspective(2000px)_rotateZ(300deg)_rotateX(44deg)_rotateY(39deg)_scale(1.4)]"
