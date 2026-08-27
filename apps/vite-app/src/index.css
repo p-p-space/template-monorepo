@@ -4,4 +4,48 @@
 :root {
   --font-family-sans: 'Geist Variable', sans-serif;
   --font-family-mono: ui-monospace, SFMono-Regular, Consolas, monospace;
+  --accent: #aa3bff;
+  --accent-bg: rgb(170 59 255 / 10%);
+  --accent-border: rgb(170 59 255 / 50%);
+  --social-bg: rgb(244 243 236 / 50%);
+  --shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.dark {
+  --accent: #c084fc;
+  --accent-bg: rgb(192 132 252 / 15%);
+  --accent-border: rgb(192 132 252 / 50%);
+  --social-bg: rgb(47 48 58 / 50%);
+  --shadow: 0 10px 15px -3px rgb(0 0 0 / 40%), 0 4px 6px -2px rgb(0 0 0 / 25%);
+}
+
+@layer base {
+  html {
+    font-size: 18px;
+    color-scheme: light;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media (max-width: 1024px) {
+      font-size: 16px;
+    }
+  }
+
+  body {
+    @apply m-0;
+  }
+
+  .dark {
+    color-scheme: dark;
+  }
+
+  #root {
+    @apply mx-auto box-border flex min-h-svh w-full max-w-281.5 flex-col border-x border-border;
+  }
+
+  code {
+    @apply inline-flex rounded bg-muted px-2 py-1 font-mono text-[15px] leading-[135%] text-foreground;
+  }
 }
