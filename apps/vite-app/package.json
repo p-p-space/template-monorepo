@@ -21,6 +21,7 @@
     "clean": "rm -rf .turbo dist node_modules"
   },
   "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
     "@space/ui": "workspace:*",
     "@space/utils": "workspace:*",
     "lucide-react": "catalog:",
