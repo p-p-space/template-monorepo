@@ -11,6 +11,9 @@
       "preset": "recommended",
       "correctness": {
         "useExhaustiveDependencies": "error"
+      },
+      "style": {
+        "useComponentExportOnlyModules": "error"
       }
     }
   }
