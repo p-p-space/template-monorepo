@@ -1,11 +1,9 @@
-# Dependencies
-node_modules
+# compiled output
+/dist
+/node_modules
+/build
 
-# Build Outputs
-dist/
-build/
-
-# Turborepo & TypeScript
+# Turborepo & TypeScript build cache
 .turbo
 *.tsbuildinfo
 
@@ -15,10 +13,31 @@ build/
 !.env.example
 !.env*.example
 
-# Logs & Testing
+# Logs
+logsnpm
 *.log
-coverage/
-.nyc_output/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
 # OS
 .DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# temp directory
+.temp
+.tmp
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json

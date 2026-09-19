@@ -46,11 +46,18 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+/.idea
+.project
+.classpath
+.c9/
+*.launch
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+.settings/
+*.sublime-workspace
 
 # Platform & Deployment
 .vercel

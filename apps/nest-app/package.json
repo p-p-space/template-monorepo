@@ -4,68 +4,52 @@
   "version": "1.0.0",
   "keywords": [],
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "private": true,
   "license": "MIT",
-  "engines": {
-    "node": ">=20.11.0",
-    "pnpm": ">=11.0.0"
-  },
   "scripts": {
     "dev": "nest start --watch",
     "build": "nest build",
     "prod": "node dist/main",
+    "deploy": "nest deploy",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
-    "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:cov": "vitest run --coverage",
+    "test:debug": "vitest --inspect-brk --no-file-parallelism",
+    "test:e2e": "vitest run --config ./vitest.config.e2e.ts",
     "lint": "biome check src test",
     "format": "biome format src test",
     "typecheck": "tsc --noEmit",
     "clean": "rm -rf .turbo dist node_modules"
   },
   "dependencies": {
-    "@nestjs/common": "^11.2.1",
-    "@nestjs/core": "^11.2.1",
-    "@nestjs/platform-express": "^11.2.1",
+    "@nestjs/common": "^12.0.3",
+    "@nestjs/core": "^12.0.3",
+    "@nestjs/platform-express": "^12.0.3",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.2"
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "@nestjs/cli": "^11.0.24",
-    "@nestjs/schematics": "^11.1.0",
-    "@nestjs/testing": "^11.2.1",
+    "@nestjs/cli": "^12.0.3",
+    "@nestjs/mau": "^0.2.6",
+    "@nestjs/schematics": "^12.0.3",
+    "@nestjs/testing": "^12.0.3",
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "@types/express": "^5.0.6",
-    "@types/jest": "^30.0.0",
     "@types/node": "catalog:",
     "@types/supertest": "^7.2.1",
-    "jest": "^30.4.2",
+    "@vitest/coverage-v8": "^5.0.1",
     "source-map-support": "^0.5.21",
     "supertest": "^7.2.2",
-    "ts-jest": "^29.4.12",
-    "ts-loader": "^9.6.2",
-    "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "^5.0.1"
   },
-  "jest": {
-    "moduleFileExtensions": ["js", "json", "ts"],
-    "rootDir": "src",
-    "testRegex": ".*\\.spec\\.ts$",
-    "transform": {
-      "^.+\\.(t|j)s$": "ts-jest"
-    },
-    "collectCoverageFrom": ["**/*.(t|j)s"],
-    "coverageDirectory": "../coverage",
-    "testEnvironment": "node"
-  },
-  "packageManager": "pnpm@11.23.0"
+  "packageManager": "pnpm@12.4.2"
 }

@@ -25,25 +25,25 @@
     "@space/ui": "workspace:*",
     "@space/utils": "workspace:*",
     "lucide-react": "catalog:",
-    "react-dom": "catalog:",
-    "react": "catalog:"
+    "react": "catalog:",
+    "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@babel/core": "^8.0.1",
+    "@babel/core": "^8.0.5",
     "@biomejs/biome": "catalog:",
-    "@rolldown/plugin-babel": "^0.2.3",
+    "@rolldown/plugin-babel": "^0.2.4",
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "@tailwindcss/vite": "^4.3.3",
     "@types/babel__core": "^7.20.5",
     "@types/node": "catalog:",
-    "@types/react-dom": "catalog:",
     "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
     "@vitejs/plugin-react": "catalog:",
     "babel-plugin-react-compiler": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
   },
-  "packageManager": "pnpm@11.23.0"
+  "packageManager": "pnpm@12.4.2"
 }
