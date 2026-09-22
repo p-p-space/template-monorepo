@@ -25,8 +25,8 @@
   },
   "devDependencies": {
     "@biomejs/biome": "catalog:",
-    "@commitlint/cli": "^21.2.2",
-    "@commitlint/config-conventional": "^21.2.2",
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "husky": "^9.1.7",
@@ -35,5 +35,5 @@
     "turbo": "^2.11.2",
     "typescript": "catalog:"
   },
-  "packageManager": "pnpm@12.4.2"
+  "packageManager": "pnpm@12.5.1"
 }
