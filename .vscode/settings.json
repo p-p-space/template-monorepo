@@ -8,7 +8,10 @@
     }
   },
   "[html][markdown][postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.prettier": "explicit"
+    }
   },
   "[yaml][github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
