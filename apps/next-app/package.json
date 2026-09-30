@@ -41,6 +41,5 @@
     "babel-plugin-react-compiler": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
-  },
-  "packageManager": "pnpm@12.5.1"
+  }
 }

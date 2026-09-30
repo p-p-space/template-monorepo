@@ -30,6 +30,5 @@
     "@space/biome-config": "workspace:*",
     "@space/typescript-config": "workspace:*",
     "typescript": "catalog:"
-  },
-  "packageManager": "pnpm@12.5.1"
+  }
 }

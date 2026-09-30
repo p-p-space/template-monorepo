@@ -44,6 +44,5 @@
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
-  },
-  "packageManager": "pnpm@12.5.1"
+  }
 }

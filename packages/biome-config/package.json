@@ -28,6 +28,5 @@
   },
   "peerDependencies": {
     "@biomejs/biome": "catalog:"
-  },
-  "packageManager": "pnpm@12.5.1"
+  }
 }

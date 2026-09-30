@@ -45,6 +45,5 @@
   },
   "peerDependencies": {
     "tailwindcss": "catalog:"
-  },
-  "packageManager": "pnpm@12.5.1"
+  }
 }
